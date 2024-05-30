@@ -8,13 +8,13 @@ return(
     <>
       <div>
         <h1>GK question</h1>
-        <div>
-           <form onSubmit={handleSubmit}>
-           <p>
-           what is your name ?
-          </p>
+        <div>  
+           <form onSubmit={handleSubmit}> 
+           <p> 
+           what is your name ? 
+          </p> 
            <input type="text"
-            value={answer}
+            value={answer}   
             onChange={(e)=>setAnswer(e.target.value)}
             disabled={Status === 'submiting'}
             placeholder="Enter your answer" />
@@ -25,7 +25,6 @@ return(
           <p className="Error">
             {error.message}
           </p>:"" }
-          
            </form>
         </div>
       </div>
